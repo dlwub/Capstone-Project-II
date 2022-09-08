@@ -1,19 +1,6 @@
 import './index.css';
 import logo from './img/logo.png';
 
-const display = document.querySelector('.movie-api');
-const getMovie = async (id) => {
-  const urlHistory = `https://api.tvmaze.com/shows/${id}`;
-  const res = await fetch(urlHistory);
-  const movie = await res.json();
-  createMovielist(movie);
-};
-const fetchmovie = async () => {
-  for (let i = 1; i < 10; i += 1) {
-    getMovie(i);
-  }
-};
-
 fetchmovie();
 
 function createMovielist(movie) {
@@ -31,6 +18,18 @@ function createMovielist(movie) {
   movieEl.innerHTML = movies;
   display.appendChild(movieEl);
 }
+const display = document.querySelector('.movie-api');
+const getMovie = async (id) => {
+  const urlHistory = `https://api.tvmaze.com/shows/${id}`;
+  const res = await fetch(urlHistory);
+  const movie = await res.json();
+  createMovielist(movie);
+};
+const fetchmovie = async () => {
+  for (let i = 1; i < 10; i += 1) {
+    getMovie(i);
+  }
+};
 
 const image = document.createElement('img');
 image.src = logo;
