@@ -1,6 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 * {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: aliceblue;
+}
+
+.nav {
+  background-color: aliceblue;
+  height: 100px;
+  width: 100%;
+  border: 1px solid #242b2e;
+  margin-top: -10px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-top: -70px;
+  gap: 200px;
+  margin-right: 40px;
+}
+
+.list li {
+  font-size: 25px;
+  color: #758283;
+  text-decoration: none;
+  font-family: 'Noto Sans Buhid', sans-serif;
+  cursor: pointer;
+}
+
+.list li:hover {
+  border: 6px solid #758283;
+  color: #b4161b;
+  border-radius: 20px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.movie-api {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+
+.movieli {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 250px;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 15px 15px;
+}
+.img:hover {
+  animation: bounce 1s linear;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.comments-btn1 {
+  color: #758283;
+  width: 250px;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Noto Sans Buhid', sans-serif;
+}
+
+.comments-btn1:hover {
+  border: 3px solid #758283;
+  color: #b4161b;
+  border-radius: 25px;
+  font-family: 'Permanent Marker', cursive;
+  border-radius: 10px;
+  background-color: #eef2e6;
+}
+
+.likes-btn {
+  margin-top: 10px;
+  width: 60px;
+  margin-left: 170px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.name {
+  color: #b4161b;
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
 }
