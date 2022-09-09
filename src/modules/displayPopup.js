@@ -3,6 +3,8 @@ import getUrl from './getUrl.js';
 
 const container = document.querySelector('.container');
 const navB = document.querySelector('.nav');
+const footer = document.querySelector('.footer');
+// const list = document.querySelector('.movie-api');
 const displayPopup = (i) => {
   const url = `${getUrl()}/comments?item_id=movie${i}`;
   const popUp = document.getElementById(`popup-${i}`);
@@ -19,6 +21,9 @@ const displayPopup = (i) => {
   popUp.style.display = 'block';
   container.style.display = 'none';
   navB.style.display = 'none';
+  footer.style.display = 'none';
+  // list.style.display = 'none';
+
   window.scrollTo(0, 0);
 };
 
