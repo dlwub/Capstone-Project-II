@@ -8,8 +8,7 @@ const createMovieList = (movie) => {
   const movieEl = createElt('div', 'movie', '');
   const movies = `
   <div class="movieli">
-  <h2 class="name">${movie.name}</h2>
-  console.log("${movie}")
+  <h2 class="name">${movie.name}</h2>  
   <img src="${movie.image.medium}" alt="img" class="img">
   <button type="button" class="likes-btn" id="like-btn-${movie.id}"> <span class="likeI"><i class="fa-regular fa-heart"></i></span>
   <span class="count">0</span></button>

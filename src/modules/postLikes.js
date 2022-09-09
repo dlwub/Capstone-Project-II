@@ -10,7 +10,7 @@ const postLikes = (e) => {
     toAPI(url, data);
     e.target.children[0].innerHTML = '<i class="fa-solid fa-heart" style="color:red"></i>';
     e.target.children[1].innerHTML += 1;
-    //e.target.children[1].innerHTML = parseInt(e.target.children[1].innerHTML, 10) + 1;
+    // e.target.children[1].innerHTML = parseInt(e.target.children[1].innerHTML, 10) + 1;
   }
 };
 
