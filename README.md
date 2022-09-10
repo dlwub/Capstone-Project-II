@@ -14,10 +14,10 @@
 
 [Live Demo Link]()
 
-
 ## Getting Started
 
-To get a local copy of the code and run it, please follow these step: 
+To get a local copy of the code and run it, please follow these step:
+
 1. Clone the repository
 2. Change the directory directory to the local copy of the code
 3. Run npm install to install webpack to your local repository
@@ -28,10 +28,9 @@ To get a local copy of the code and run it, please follow these step:
 
 👤 **Elie Harfouche**
 
-- GitHub: https://github.com/dlwub
-- Twitter: [@DestaWubishet](https://twitter.com/DestaWubishet)
-- LinkedIn: https://www.linkedin.com/in/desta-legesse-w-509844213/
-
+- GitHub: https://github.com/X-Elie-X
+- Twitter: [@ElieHarfoucheX](https://twitter.com/ElieHarfoucheX)
+- LinkedIn: https://www.linkedin.com/in/elie-harfouche-3aaa8818a/
 
 👤 **Desta Legesse Wubishet**
 
