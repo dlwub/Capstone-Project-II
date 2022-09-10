@@ -188,7 +188,7 @@
 }
 
 .name-input {
-  width: 400px;
+  width: 230px;
   height: 20px;
   border: none;
   font-family: 'Noto Sans Buhid', sans-serif;
@@ -203,7 +203,6 @@
 }
 
 .comment-input {
-  width: 400px;
   height: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -242,12 +241,14 @@
   font-size: 40px;
   color: #242b2e;
 }
+
 .language {
   font-family: 'Noto Sans Buhid', sans-serif;
   text-align: center;
   font-size: 30px;
   color: #758283;
 }
+
 .rating {
   font-family: 'Permanent Marker', cursive;
   text-align: center;
