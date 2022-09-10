@@ -1,62 +1,50 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# An API based movie app
 
-> Description the project.
-
+> This project is a second Capstone project at Microverse. The movie web app is built based on two external APIs: the TVmaze API ('[https://api.tvmaze.com/shows/]') and the Involvement API ('[https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/]). The web app has two user interfaces: a home page that displays list of movies and a popup window with more detail for each movie.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS, JavaScript
+- Webpack
+- Jest
 
-## Live Demo (if available)
+## A Video Description
 
-[Live Demo Link](https://livedemo.com)
+[A video link](https://drive.google.com/drive/folders/1OFzk1RNygPLEuNrbfo7zZ9zdS9Hykv60)
 
+## Live Demo 
+
+[Live Demo Link](https://dlwub.github.io/Capstone-Project-II/dist/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy of the code and run it, please follow these step:
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+1. Clone the repository
+2. Change the directory to the directory of the local copy of the code
+3. Run npm install to install webpack to your local repository
+4. Run npm run build
+5. Run npm start
 
 ## Authors
 
-👤 **Author1**
+👤 **Elie Harfouche**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: https://github.com/X-Elie-X
+- Twitter: [@ElieHarfoucheX](https://twitter.com/ElieHarfoucheX)
+- LinkedIn: https://www.linkedin.com/in/elie-harfouche-3aaa8818a/
 
-👤 **Author2**
+👤 **Desta Legesse Wubishet**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: https://github.com/dlwub
+- Twitter: [@DestaWubishet](https://twitter.com/DestaWubishet)
+- LinkedIn: https://www.linkedin.com/in/desta-legesse-w-509844213/
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -64,12 +52,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Thanks to Microverse
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+&copy; Elie Harfouche & Desta Legesse Wubishet
