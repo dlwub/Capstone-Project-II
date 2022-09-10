@@ -1,11 +1,7 @@
-import Comment from './comment.js';
 import createElt from './createElement.js';
 import createImage from './createImage.js';
-import hidePopup from './hidePopup.js';
 import btn from '../images/close_btn.png';
 import getSummary from './getSummary.js';
-import getUrl from './getUrl.js';
-import toAPI from './toAPI.js';
 
 const createPopup = (movie) => {
   const popUp = createElt('div', 'popup', '');
@@ -50,7 +46,8 @@ const createPopup = (movie) => {
   const addComment = createElt('h3', 'comments', 'Add a comment');
   popUp.append(addComment);
 
-  const formDiv = createElt('div', 'comment-form', '');
+  const formDiv = createElt('form', 'comment-form', '');
+  formDiv.method = 'POST';
   const nameInput = createElt('input', 'name-input', '');
   nameInput.type = 'text';
   nameInput.placeholder = 'Your name';
@@ -62,28 +59,13 @@ const createPopup = (movie) => {
   commentInput.setAttribute('id', `comment-input${id}`);
   formDiv.appendChild(commentInput);
 
-  const commentButton = createElt('button', 'submit-btn', 'Comment');
-  commentButton.type = 'submit';
-  commentButton.setAttribute('id', `comment-btn${id}`);
-  formDiv.appendChild(commentButton);
+  const submitButton = createElt('button', 'submit-btn', 'Comment');
+  submitButton.type = 'submit';
+  submitButton.setAttribute('id', `submit-btn${id}`);
+  formDiv.appendChild(submitButton);
 
   popUp.appendChild(formDiv);
   popUp.style.display = 'none';
-
-  closeBtn.addEventListener('click', (e) => hidePopup(e));
-  commentButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    const id = e.target.id.replace('comment-btn', '');
-    const name = document.getElementById(`name-input${id}`).value;
-    const comment = document.getElementById(`comment-input${id}`).value;
-    const itemId = `movie${movie.id}`;
-    const url = `${getUrl()}/comments`;
-    if (name && comment) {
-      const newComment = new Comment(itemId, name, comment);
-      toAPI(url, newComment);
-    }
-  });
-
   document.body.insertBefore(popUp, document.body.firstChild);
 };
 
