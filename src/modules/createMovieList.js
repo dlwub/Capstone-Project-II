@@ -18,7 +18,7 @@ const createMovieList = (movie) => {
 
   movieEl.innerHTML = movies;
   display.appendChild(movieEl);
- 
+
   const commentBtn = document.getElementById(`comment-btn-${movie.id}`);
   commentBtn.addEventListener('click', (e) => {
     const id = e.target.id.replace('comment-btn-', '');

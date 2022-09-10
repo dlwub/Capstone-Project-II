@@ -14,7 +14,7 @@ const displayPopup = (i) => {
   const closeBtn = document.getElementById(`${i}`);
   const submitButton = document.getElementById(`submit-btn${i}`);
 
-  const url = `${getUrl()}/comments?item_id=movie${i}`;  
+  const url = `${getUrl()}/comments?item_id=movie${i}`;
   const commentList = document.getElementById(`comments${i}`);
   (async () => {
     const comments = await fromAPI(url);
@@ -39,12 +39,12 @@ const displayPopup = (i) => {
     const url = `${getUrl()}/comments`;
     if (name && comment) {
       const newComment = new Comment(itemId, name, comment);
-      toAPI(url, newComment); 
-      updateComment(id, name, comment);     
-    } 
-          
+      toAPI(url, newComment);
+      updateComment(id, name, comment);
+    }
+
     document.getElementById(`name-input${id}`).value = '';
-    document.getElementById(`comment-input${id}`).value = '';    
+    document.getElementById(`comment-input${id}`).value = '';
   });
 };
 

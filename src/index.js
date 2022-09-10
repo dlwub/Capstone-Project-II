@@ -9,5 +9,5 @@ document.querySelector('nav').prepend(image);
 
 window.addEventListener('load', () => {
   fetchMovie();
-  getLikes();  
+  getLikes();
 });

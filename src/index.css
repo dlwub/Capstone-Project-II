@@ -102,7 +102,6 @@
 .comments-btn:hover {
   border: 3px solid #758283;
   color: #b4161b;
-  border-radius: 25px;
   font-family: 'Permanent Marker', cursive;
   border-radius: 10px;
   background-color: #eef2e6;
@@ -224,7 +223,6 @@
 .submit-btn:hover {
   border: 3px solid #b4161b;
   color: #b4161b;
-  border-radius: 25px;
   font-family: 'Permanent Marker', cursive;
   border-radius: 40px 40px 30px 30px;
 }

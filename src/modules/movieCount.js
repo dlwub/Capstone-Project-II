@@ -1,5 +1,3 @@
-const movieCount = () => {
-  return document.getElementById('movie-count').textContent;
-}
+const movieCount = () => document.getElementById('movie-count').textContent;
 
-export default movieCount
+export default movieCount;
